@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Boi_te_a__meuh___Carousel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qt5-zs-cfa" customClass="iCarousel">
+                                <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BOÎTE À MEUH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZV-mG-TcX">
+                                        <rect key="frame" x="52" y="23" width="249" height="50"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="35"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="BZV-mG-TcX" firstAttribute="centerX" secondItem="qt5-zs-cfa" secondAttribute="centerX" id="G5X-bs-vBg">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="-229.5"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
+                                    </constraint>
+                                    <constraint firstItem="BZV-mG-TcX" firstAttribute="leading" secondItem="qt5-zs-cfa" secondAttribute="leading" constant="58" id="aaS-kS-n0d">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="52"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="102"/>
+                                    </constraint>
+                                    <constraint firstItem="BZV-mG-TcX" firstAttribute="top" secondItem="qt5-zs-cfa" secondAttribute="top" constant="40" id="gWo-70-vcD">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="23"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="8"/>
+                                    </constraint>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="gbg-dM-BHx"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="uBW-op-Q2B"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qt5-zs-cfa" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="2OP-2A-ngu">
+                                <variation key="heightClass=compact-widthClass=compact" constant="44"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="44"/>
+                            </constraint>
+                            <constraint firstItem="qt5-zs-cfa" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="8wx-bP-LaO"/>
+                            <constraint firstAttribute="bottom" secondItem="qt5-zs-cfa" secondAttribute="bottom" id="EhG-Wf-kCB"/>
+                            <constraint firstItem="qt5-zs-cfa" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Mdf-7g-WCv"/>
+                            <constraint firstItem="qt5-zs-cfa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YT1-U3-Bwb">
+                                <variation key="heightClass=compact-widthClass=compact" constant="-44"/>
+                            </constraint>
+                            <constraint firstItem="qt5-zs-cfa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Zbf-mK-BHi">
+                                <variation key="heightClass=compact-widthClass=compact" constant="-44"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="-44"/>
+                            </constraint>
+                            <constraint firstItem="qt5-zs-cfa" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Ziu-0s-19W">
+                                <variation key="heightClass=compact-widthClass=compact" constant="21"/>
+                            </constraint>
+                            <constraint firstItem="qt5-zs-cfa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Zom-hT-a3t"/>
+                            <constraint firstItem="qt5-zs-cfa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="haP-Oc-p1P">
+                                <variation key="heightClass=compact-widthClass=compact" constant="-44"/>
+                            </constraint>
+                            <constraint firstItem="qt5-zs-cfa" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="na9-7r-MXY">
+                                <variation key="heightClass=compact-widthClass=compact" constant="44"/>
+                            </constraint>
+                            <constraint firstItem="qt5-zs-cfa" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="uAa-XI-mpT">
+                                <variation key="heightClass=compact-widthClass=compact" constant="44"/>
+                            </constraint>
+                            <constraint firstItem="qt5-zs-cfa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="uhY-ZL-EsN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8wx-bP-LaO"/>
+                                <exclude reference="YT1-U3-Bwb"/>
+                                <exclude reference="Ziu-0s-19W"/>
+                                <exclude reference="Zom-hT-a3t"/>
+                                <exclude reference="haP-Oc-p1P"/>
+                                <exclude reference="na9-7r-MXY"/>
+                                <exclude reference="uAa-XI-mpT"/>
+                                <exclude reference="uhY-ZL-EsN"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="8wx-bP-LaO"/>
+                                <exclude reference="EhG-Wf-kCB"/>
+                                <include reference="YT1-U3-Bwb"/>
+                                <include reference="Ziu-0s-19W"/>
+                                <include reference="Zom-hT-a3t"/>
+                                <include reference="haP-Oc-p1P"/>
+                                <include reference="na9-7r-MXY"/>
+                                <include reference="uAa-XI-mpT"/>
+                                <include reference="uhY-ZL-EsN"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="iCarouselView" destination="qt5-zs-cfa" id="4n3-I7-D7b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.65517241379311" y="130.40000000000001"/>
+        </scene>
+    </scenes>
+</document>
